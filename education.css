@@ -14,13 +14,15 @@
     --font-secondary: 24px;
     --font-p1: 20px;
     --font-p2: 18px;
+    
     --primary-color: #27272bc5;
     --seconday-color:#25294b;
+
     --pad: max(20px, 4vmin);
 }
 
 body {
-    font-family: "Chakra Petch", sans-serif;       
+    font-family: "Chakra Petch", sans-serif;                
 }
 
 h1 {
@@ -140,7 +142,7 @@ a:hover {
 }
 
 .wrapper {
-    max-width: 300px;
+    max-width: 350px;
     max-width: 0 auto;
     grid-template-columns: 1.2fr .8fr;
 }
