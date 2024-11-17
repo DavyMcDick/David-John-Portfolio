@@ -67,7 +67,7 @@ a:hover {
 }
 
 .bg {
-    background-image: url("/Fron-end/bg.jpg");
+    background-image: url("bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
