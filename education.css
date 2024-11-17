@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: "Chakra Petch", sans-serif;                
+    font-family: "Chakra Petch", sans-serif;       
 }
 
 h1 {
@@ -44,7 +44,7 @@ a:hover {
 }
 
 .bg {
-    background-image: url("bg.jpg");
+    background-image: url("/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
@@ -142,7 +142,7 @@ a:hover {
 }
 
 .wrapper {
-    max-width: 350px;
+    max-width: 300px;
     max-width: 0 auto;
     grid-template-columns: 1.2fr .8fr;
 }
