@@ -23,30 +23,35 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    line-height: calc(1em + .5rem);
+    line-height: 1.5rem;
 }
 
 
 :root {
-
+    /* font sizes */
     --font-main: 36px;
     --font-secondary: 24px;
     --font-p1: 20px;
     --font-p2: 18px;
-    
-    --primary-color: #27272bc5;
-    --seconday-color:#25294b;
 
+    /* fonts  colors */
+    --primary-color: #27272bc5;
+    --secondary-color:#25294b;
+    --clr-white: #ffffff;
+    --hover-color: #3242bf;
     --pad: max(20px, 4vmin);
+
+    /* font families */
+    --ff-primary: "Chakra Petch", sans-serif;     
+    --ff-secondary: Vt323, sans-serif;
 }
 
 body {
-    font-family: "Chakra Petch", sans-serif;                
+    font-family: var(--ff-primary);                
 }
 
-
 h1 {
-    font-family: Vt323, sans-serif;
+    font-family: var(--ff-secondary);
     font-size: var(--font-main);
     font-weight: 500;
 }
@@ -55,11 +60,11 @@ li, ul, ol, a {
     list-style: none;
     text-decoration: none;
     color: var(--primary-color);
-    font-family: "VT323", serif;
+    font-family: var(--ff-secondary);
     font-size: var(--font-p1);
 }
 a:hover {
-    color: #3242bf;
+    color: var(--hover-color);
     cursor: pointer;
 }
 
@@ -75,8 +80,9 @@ a:hover {
     right: 0;
     bottom: 0;
 }
+
 .inner-bg {
-    background-color: #ffffff;
+    background-color: var(--clr-white);
     overflow: hidden;
     flex: none;
     bottom: var(--pad);
@@ -92,11 +98,29 @@ a:hover {
     pointer-events: none;
 }
 
+
+#title {
+    bottom: calc(var(--pad)* 2);
+    color: var(--primary-color);
+    font-family: var(--ff-secondary);
+    font-size: var(--font-secondary);
+    font-weight: 500;
+    position: fixed;
+    right: calc(var(--pad)* 1.5);
+    transform: rotate(270deg);
+    width: 22px;
+    color: var(--hover-color);
+}
+
 .nav-links {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     gap: 0.5rem;
+    color: #25294b;
+}
+.active {
+    color: var(--hover-color);
 }
 
 .navbar {
@@ -109,7 +133,7 @@ a:hover {
     position: absolute;
     bottom: 50dvh;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--clr-white);
     left: 1.5%;
 }
 
@@ -120,7 +144,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #3242bf;
+    fill: var(--hover-color);
 
 }
 
@@ -129,15 +153,13 @@ a:hover {
     border-top: 0;
 }
 .aside-social-icons  a:hover{
-    background-color: #3242bf;
-    fill: #ffffff;
+    background-color: var(--hover-color);
+    fill: var(--clr-white);
     transition: 0.5s;
 }
 
-
-
 .info h1 {
-    font-family:  "Chakra Petch", sans-serif;
+    font-family:  var(--ff-primary);
     background: linear-gradient(45deg, #3242bf, #071c24);
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -153,14 +175,14 @@ a:hover {
 #title {
     bottom: calc(var(--pad)* 2);
     color: var(--primary-color);
-    font-family: VT323, sans-serif;
+    font-family: var(--ff-secondary);
     font-size: var(--font-secondary);
     font-weight: 500;
     position: fixed;
     right: calc(var(--pad)* 1.5);
     transform: rotate(270deg);
     width: 22px;
-    color: #3242bf;
+    color: var(--hover-color);
 }
 
 .page-content {
@@ -224,27 +246,6 @@ section p {
     font-size: 18px;
 }
 
-.mask-bottom {
-    -webkit-backdrop-filter: blur(1.3px);
-    backdrop-filter: blur(1.3px);
-    height: var(--pad);
-    left: 0;
-    opacity: .9;
-    position: absolute;
-    transition-property: background-color;
-    width: 100%;
-}
-.mask-top {
--webkit-backdrop-filter: blur(1.3px);
-backdrop-filter: blur(1.3px);
-height: var(--pad);
-left: 0;
-opacity: .9;
-position: absolute;
-transition-property: background-color;
-width: 100%;
-bottom: 0;
-}
 @media (min-width: 1024px) {
     .nav-links {
         justify-content: flex-end;
@@ -298,8 +299,6 @@ bottom: 0;
     font-size: 10px;
     }
 }
-
-
 
 @media (max-width: 768px) {
     ul li a{
