@@ -109,6 +109,8 @@ a:hover {
     position: fixed;
     right: calc(var(--pad) *2);
     top: calc(var(--pad) *1.5);
+    position: fixed;
+    z-index: 1000;
 }
 
 .aside-social-icons {
