@@ -14,12 +14,19 @@
     --font-secondary: 24px;
     --font-p1: 20px;
     --font-p2: 18px;
+<<<<<<< HEAD
 
     /* fonts  colors */
     --primary-color: #27272bc5;
     --secondary-color:#25294b;
     --clr-white: #ffffff;
     --hover-color: #3242bf;
+=======
+    
+    --primary-color: #27272bc5;
+    --seconday-color:#25294b;
+
+>>>>>>> 1af491f809f7d08caf3949ea3eea5e3d210b3994
     --pad: max(20px, 4vmin);
 
     /* font families */
@@ -28,8 +35,12 @@
 }
 
 body {
+<<<<<<< HEAD
     font-family: var(--ff-primary);       
     overflow: hidden;         
+=======
+    font-family: "Chakra Petch", sans-serif;                
+>>>>>>> 1af491f809f7d08caf3949ea3eea5e3d210b3994
 }
 
 h1 {
